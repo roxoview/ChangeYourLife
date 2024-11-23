@@ -1,0 +1,179 @@
+/* Reset e estilo básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #000; /* Fundo preto para toda a página */
+}
+
+/* Cabeçalho principal */
+.mainHeader {
+  padding: 0 10px;
+  background-color: #000; /* Fundo preto no cabeçalho */
+  width: 100%;
+  height: 20em;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.imgHeader {
+  height: 100%; /* Imagem ocupa toda a altura do cabeçalho */
+  width: 100%; /* Imagem ocupa toda a largura */
+  object-fit: cover; /* Garante que a imagem não seja distorcida */
+}
+
+.titleMain {
+  position: absolute;
+  overflow: hidden;
+  font-size: 5em;
+  text-shadow: 2px 2px 5px #000;
+  text-align: center;
+}
+
+/* Conteúdo principal */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Permite que os elementos "quebrem" em telas menores */
+  width: 100%;
+  
+  padding: 20px;
+  background-color: #000; /* Fundo preto para a área principal */
+}
+
+/* Seção do produto */
+.product1 {
+  display: flex;
+  flex-direction: column; /* Empilha elementos verticalmente por padrão */
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  max-width: 600px;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.imgProduct1 {
+  width: 100%;
+  max-width: 350px;
+  object-fit: cover;
+  box-shadow: 1px 0px 15px 2px sandybrown;
+  margin-bottom: 10px;
+}
+
+/* Container do produto */
+.productContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: auto;
+}
+
+/* Descrição do produto */
+.descProduct1 {
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Link e botão */
+.tagA {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ButtonProduct1 {
+  background-color: #fff;
+  width: 100%; /* Botão ocupa toda a largura do container */
+  max-width: 400px; /* Aumenta o tamanho máximo do botão */
+  height: 60px; /* Aumenta a altura do botão */
+  color: #000;
+  padding: 0 20px; /* Aumenta o padding para mais espaçamento */
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 1.2rem; /* Aumenta o tamanho da fonte no botão */
+  animation: breath 2s infinite; /* Adiciona a animação de respiração */
+}
+
+/* Quando o mouse está sobre o botão */
+.ButtonProduct1:hover {
+  background-color: #fff;
+  color: #000;
+  animation: none; /* Cancela a animação de respiração */
+  transform: scale(1); /* Garante que o botão fique estático */
+}
+
+/* Efeito de respiração */
+@keyframes breath {
+  0% {
+    transform: scale(1);
+    background-color: green;
+    color: white;
+  }
+  50% {
+    transform: scale(1.1); /* Aumenta o botão */
+    background-color: #2ecc71; /* Cor verde mais clara */
+    color: white;
+  }
+  100% {
+    transform: scale(1);
+    background-color: green;
+    color: white;
+  }
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .mainHeader {
+    height: auto; /* Ajusta a altura automaticamente em telas menores */
+    padding: 20px;
+  }
+
+  .titleMain {
+    font-size: 2.5em; /* Reduz o tamanho do texto em dispositivos menores */
+  }
+
+  .product1 {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .imgProduct1 {
+    max-width: 150px;
+  }
+
+  .ButtonProduct1 {
+    max-width: 100%;
+    height: 60px; /* Aumenta a altura para mobile também */
+    font-size: 1.5rem; /* Aumenta o tamanho da fonte para facilitar a visualização */
+  }
+}
+
+.descProduct1 {
+  transition: opacity 1s ease-in-out; /* Transição suave de opacidade */
+  opacity: 1; /* Inicialmente visível */
+}
+
+.green-text {
+  color: green;
+}
