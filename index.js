@@ -26,5 +26,34 @@ function changeDesc() {
     }, 1000); // 1 segundo para esperar o fade-out antes de trocar o texto
   }, 5000); // Troca a cada 5 segundos
 }
+// Referência à div
+const mainTexts = document.querySelector(".mainTexts");
+
+// Frases que serão alternadas
+const frases = [
+  "Descubra como ganhar de 2 a 20 mil/mês usando só o seu Celular e 2h por dia do seu tempo",
+  "Sem aparecer.",
+  "Sem investir.",
+  "Sem criar conteúdo.",
+  "E o melhor, no automático."
+];
+
+// Duração das exibições
+const duracoes = [3000, 1500, 1500, 1500, 1500]; // Primeira frase 3s, as outras 1.5s
+
+let indice = 0;
+
+// Função para alternar as frases
+function alternarFrases() {
+  mainTexts.textContent = frases[indice]; // Atualiza o texto da div
+  const proximaDuracao = duracoes[indice]; // Duração atual
+  indice = (indice + 1) % frases.length; // Avança para a próxima frase, voltando ao início quando necessário
+
+  // Chama a função novamente após o tempo definido
+  setTimeout(alternarFrases, proximaDuracao);
+}
+
+// Inicia a alternância
+alternarFrases();
 
 changeDesc();

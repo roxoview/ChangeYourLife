@@ -218,3 +218,47 @@ html, body {
 .red-text {
   color: #e74c3c; /* Cor vermelha */
 }
+/* Estilo para a div .mainTexts */
+/* Estilo para a div .mainTexts */
+.mainTexts {
+  background-color: #1d1c1c; /* Cor de fundo */
+  color: #fff; /* Cor inicial do texto */
+  font-size: 1.5rem; /* Tamanho do texto */
+  padding: 20px; /* Espaço interno */
+  margin: 20px auto; /* Centraliza horizontalmente */
+  text-align: center; /* Alinha o texto ao centro */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+  max-width: 600px; /* Limita a largura máxima */
+  line-height: 1.5; /* Espaçamento entre linhas */
+  animation: pulseText 1.5s infinite; /* Adiciona animação contínua */
+}
+
+/* Animação de respiro piscando em vermelho */
+@keyframes pulseText {
+  0% {
+    color: #fff; /* Branco no início */
+  }
+  50% {
+    color: #e74c3c; /* Vermelho no meio */
+  }
+  100% {
+    color: #fff; /* Volta ao branco */
+  }
+}
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .mainTexts {
+    font-size: 1.2rem; /* Reduz o tamanho do texto */
+    padding: 15px; /* Ajusta o espaçamento interno */
+  }
+}
+
+@media (max-width: 480px) {
+  .mainTexts {
+    font-size: 1rem; /* Reduz ainda mais o tamanho do texto */
+    padding: 10px; /* Espaço interno mais compacto */
+  }
+}
