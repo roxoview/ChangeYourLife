@@ -1,38 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet" />
-    <link rel="icon" href="assets/roxoviewIcon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="index.css" />
-    <script src="index.js" defer></script>
-    <title>ROXOVIEW</title>
-  </head>
-  <body>
-    <header class="mainHeader">
-      <img class="imgHeader" src="assets/mainBackGround.gif" alt="">
-      <p class="titleMain">ROXOVIEW</p>
-    </header>
-    <main class="main">
-      <section class="product1">
-        <div class="productContainer">
-          <img class="imgProduct1" src="assets/efeito-capa_6143b0d46de34dc69ded6526d620e216.jpg" alt="Imagem do Produto" />
-          <p class="descProduct1">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="icon" href="assets/roxoviewIcon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="index.css" />
+  <script src="index.js" defer></script>
+  <title>ROXOVIEW</title>
+</head>
+<body>
+  <!-- Header fixo -->
+  <header class="roxoview-header">
+    <div class="header-container">
+      <div class="header-logo">
+        <a href="#" class="tagA">ROXOVIEW</a>
+      </div>
+      <nav class="header-nav">
+        <!-- <a href="#about">Sobre</a> -->
+        <a href="#products">Produtos</a>
+        <!-- <a href="#contact">Contato</a> -->
+      </nav>
+    </div>
+  </header>
 
-          </p>
+  <!-- Conteúdo principal -->
+  <main class="main">
+    <section id="products" class="products">
+      <!-- Produto 1 -->
+      <div class="product">
+        <div class="productContainer">
+          <img class="imgProduct" src="assets/efeito-capa_6143b0d46de34dc69ded6526d620e216.jpg" alt="Produto 1" />
+          <p class="descProduct">Descubra como <span class='green-text'>ganhar de 2 a 20 mil/mês</span></p>
         </div>
-        <a
-          class="tagA"
-          href="https://www.sistemaviralafiliados.com/oficial-kiwify"
-          target="_blank">
-          <button class="ButtonProduct1">ACESSAR</button>
+        <a class="tagA" href="https://www.sistemaviralafiliados.com/oficial-kiwify" target="_blank">
+          <button class="ButtonProduct">ACESSAR</button>
         </a>
-      </section>
-    </main>
-  </body>
+      </div>
+      
+      <!-- Produto 2 
+      <div class="product">
+        <div class="productContainer">
+          <img class="imgProduct" src="assets/produto2.jpg" alt="Produto 2" />
+          <p class="descProduct">Tenha acesso ao curso exclusivo e comece sua jornada no marketing digital agora mesmo.</p>
+        </div>
+        <a class="tagA" href="https://example.com/produto2" target="_blank">
+          <button class="ButtonProduct">SAIBA MAIS</button>
+        </a>
+      </div>  -->
+      
+      <!-- Adicione mais produtos duplicando o bloco acima -->
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="roxoview-footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2>ROXOVIEW</h2>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/roxodaily/" aria-label="Instagram" class="social-icon" target="_blank">
+          <img src="assets/Popular-Logo-Instagram-icon-PNG.png" alt="Instagram" />
+        </a>
+        <a href="https://www.tiktok.com/@roxoview" aria-label="TikTok" class="social-icon" target="_blank">
+          <img src="assets/png-transparent-tiktok-icon.png" alt="TikTok" />
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 RoxoView. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
 </html>

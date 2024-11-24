@@ -1,11 +1,10 @@
-const productDesc = document.querySelector(".descProduct1");
+const productDesc = document.querySelector(".descProduct");
 const descriptions = [
-  "Descubra como ganhar de 2 a 20 mil/mês usando só o seu Celular e 2h por dia do seu tempo.",
   "DEIXE A INTELIGÊNCIA ARTIFICIAL TRABALHAR POR VOCÊ",
-  "SEM APARECER E SEM INVESTIR",
+  "SEM APARECER E SEM INVESTIR DINHEIRO",
   "Renda em Dólar sem Vender NADA",
   "CLIQUE AGORA NO BOTÃO ABAIXO, NÃO PERCA ESSA OPORTUNIDADE!",
-  "De R$297 por apenas 12x de: <span class='green-text'>R$ 19,78</span> ou <span class='green-text'>R$ 197,00</span> à vista"
+  "De <span class='red-text'>R$297</span> por apenas 12x de: <span class='green-text'>R$ 19,78</span> ou <span class='green-text'>R$ 197,00</span> à vista"
 ];
 let currentIndex = 0;
 
